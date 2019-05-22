@@ -8,6 +8,7 @@ def main():
     print("Output")
     interpretation(bf_code)
 
+
 def interpretation(bf_code):
     memory = [0 for i in range(MEMORY_SIZE)]
     ptr = 0
