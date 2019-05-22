@@ -3,8 +3,12 @@ import argparse
 
 MEMORY_SIZE = 256
 
+def main():
+    bf_code = init()
+    print("Output")
+    interpretation(bf_code)
 
-def main(bf_code):
+def interpretation(bf_code):
     memory = [0 for i in range(MEMORY_SIZE)]
     ptr = 0
     idx = 0
@@ -66,6 +70,4 @@ def init():
 
 
 if __name__ == "__main__":
-    bf_code = init()
-    print("Output")
-    main(bf_code)
+    main()
